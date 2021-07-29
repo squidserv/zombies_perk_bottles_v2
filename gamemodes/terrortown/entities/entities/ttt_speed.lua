@@ -76,13 +76,11 @@ local SpeedCola = {
 if GetConVar("ttt_speedcola_detective"):GetBool() and GetConVar("ttt_speedcola_traitor"):GetBool() then
     table.insert(EquipmentItems[ROLE_DETECTIVE], SpeedCola)
     table.insert(EquipmentItems[ROLE_TRAITOR], SpeedCola)
-end
 
-if GetConVar("ttt_speedcola_detective"):GetBool() == false and GetConVar("ttt_speedcola_traitor"):GetBool() then
+elseif not GetConVar("ttt_speedcola_detective"):GetBool() and GetConVar("ttt_speedcola_traitor"):GetBool() then
     table.insert(EquipmentItems[ROLE_TRAITOR], SpeedCola)
-end
 
-if GetConVar("ttt_speedcola_detective"):GetBool() and GetConVar("ttt_speedcola_traitor"):GetBool() == false then
+elseif GetConVar("ttt_speedcola_detective"):GetBool() and not GetConVar("ttt_speedcola_traitor"):GetBool() then
     table.insert(EquipmentItems[ROLE_DETECTIVE], SpeedCola)
 end
 

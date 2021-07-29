@@ -73,13 +73,11 @@ local PHD = {
 if GetConVar("ttt_phd_detective"):GetBool() and GetConVar("ttt_phd_traitor"):GetBool() then
     table.insert(EquipmentItems[ROLE_DETECTIVE], PHD)
     table.insert(EquipmentItems[ROLE_TRAITOR], PHD)
-end
 
-if GetConVar("ttt_phd_detective"):GetBool() == false and GetConVar("ttt_phd_traitor"):GetBool() then
+elseif not GetConVar("ttt_phd_detective"):GetBool() and GetConVar("ttt_phd_traitor"):GetBool() then
     table.insert(EquipmentItems[ROLE_TRAITOR], PHD)
-end
 
-if GetConVar("ttt_phd_detective"):GetBool() and GetConVar("ttt_phd_traitor"):GetBool() == false then
+elseif GetConVar("ttt_phd_detective"):GetBool() and not GetConVar("ttt_phd_traitor"):GetBool() then
     table.insert(EquipmentItems[ROLE_DETECTIVE], PHD)
 end
 

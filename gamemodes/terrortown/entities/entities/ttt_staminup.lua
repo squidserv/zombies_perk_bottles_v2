@@ -73,13 +73,11 @@ local Staminup = {
 if GetConVar("ttt_staminup_detective"):GetBool() and GetConVar("ttt_staminup_traitor"):GetBool() then
     table.insert(EquipmentItems[ROLE_DETECTIVE], Staminup)
     table.insert(EquipmentItems[ROLE_TRAITOR], Staminup)
-end
 
-if GetConVar("ttt_staminup_detective"):GetBool() == false and GetConVar("ttt_staminup_traitor"):GetBool() then
+elseif not GetConVar("ttt_staminup_detective"):GetBool() and GetConVar("ttt_staminup_traitor"):GetBool() then
     table.insert(EquipmentItems[ROLE_TRAITOR], Staminup)
-end
 
-if GetConVar("ttt_staminup_detective"):GetBool() and GetConVar("ttt_staminup_traitor"):GetBool() == false then
+elseif GetConVar("ttt_staminup_detective"):GetBool() and not GetConVar("ttt_staminup_traitor"):GetBool() then
     table.insert(EquipmentItems[ROLE_DETECTIVE], Staminup)
 end
 

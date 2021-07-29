@@ -17,14 +17,15 @@ ITEM.material = "vgui/ttt/ic_doubletap"
 
 if GetConVar("ttt_doubletap_detective"):GetBool() and GetConVar("ttt_doubletap_traitor"):GetBool() then
     ITEM.CanBuy = {ROLE_TRAITOR, ROLE_DETECTIVE}
-end
 
-if GetConVar("ttt_doubletap_detective"):GetBool() == false and GetConVar("ttt_doubletap_traitor"):GetBool() then
+elseif not GetConVar("ttt_doubletap_detective"):GetBool() and GetConVar("ttt_doubletap_traitor"):GetBool() then
     ITEM.CanBuy = {ROLE_TRAITOR}
-end
 
-if GetConVar("ttt_doubletap_detective"):GetBool() and GetConVar("ttt_doubletap_traitor"):GetBool() == false then
+elseif GetConVar("ttt_doubletap_detective"):GetBool() and not GetConVar("ttt_doubletap_traitor"):GetBool() then
     ITEM.CanBuy = {ROLE_DETECTIVE}
+
+else
+    ITEM.CanBuy = {ROLE_NONE}
 end
 
 if SERVER then

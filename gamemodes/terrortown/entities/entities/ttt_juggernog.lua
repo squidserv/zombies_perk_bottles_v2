@@ -73,13 +73,11 @@ local Juggernog = {
 if GetConVar("ttt_juggernog_detective"):GetBool() and GetConVar("ttt_juggernog_traitor"):GetBool() then
     table.insert(EquipmentItems[ROLE_DETECTIVE], Juggernog)
     table.insert(EquipmentItems[ROLE_TRAITOR], Juggernog)
-end
 
-if GetConVar("ttt_juggernog_detective"):GetBool() == false and GetConVar("ttt_juggernog_traitor"):GetBool() then
+elseif not GetConVar("ttt_juggernog_detective"):GetBool() and GetConVar("ttt_juggernog_traitor"):GetBool() then
     table.insert(EquipmentItems[ROLE_TRAITOR], Juggernog)
-end
 
-if GetConVar("ttt_juggernog_detective"):GetBool() and GetConVar("ttt_juggernog_traitor"):GetBool() == false then
+elseif GetConVar("ttt_juggernog_detective"):GetBool() and not GetConVar("ttt_juggernog_traitor"):GetBool() then
     table.insert(EquipmentItems[ROLE_DETECTIVE], Juggernog)
 end
 

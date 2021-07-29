@@ -63,22 +63,22 @@ net.Receive("ZPBResetMaterials", function()
     end
 end)
 
-CreateConVar("ttt_doubletap_detective", 0, {FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Whether a detective can buy Doubletap", 0, 1)
+CreateConVar("ttt_doubletap_detective", 0, {FCVAR_ARCHIVE, FCVAR_NOTIFY, FCVAR_REPLICATED}, "Whether a detective can buy Doubletap", 0, 1)
 
-CreateConVar("ttt_doubletap_traitor", 1, {FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Whether a traitor can buy Doubletap", 0, 1)
+CreateConVar("ttt_doubletap_traitor", 1, {FCVAR_ARCHIVE, FCVAR_NOTIFY, FCVAR_REPLICATED}, "Whether a traitor can buy Doubletap", 0, 1)
 
-CreateConVar("ttt_juggernog_detective", 1, {FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Whether a detective can buy Juggernog", 0, 1)
+CreateConVar("ttt_juggernog_detective", 1, {FCVAR_ARCHIVE, FCVAR_NOTIFY, FCVAR_REPLICATED}, "Whether a detective can buy Juggernog", 0, 1)
 
-CreateConVar("ttt_juggernog_traitor", 0, {FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Whether a traitor can buy Juggernog", 0, 1)
+CreateConVar("ttt_juggernog_traitor", 0, {FCVAR_ARCHIVE, FCVAR_NOTIFY, FCVAR_REPLICATED}, "Whether a traitor can buy Juggernog", 0, 1)
 
-CreateConVar("ttt_phd_detective", 1, {FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Whether a detective can buy PHD Flopper", 0, 1)
+CreateConVar("ttt_phd_detective", 1, {FCVAR_ARCHIVE, FCVAR_NOTIFY, FCVAR_REPLICATED}, "Whether a detective can buy PHD Flopper", 0, 1)
 
-CreateConVar("ttt_phd_traitor", 1, {FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Whether a traitor can buy PHD Flopper", 0, 1)
+CreateConVar("ttt_phd_traitor", 1, {FCVAR_ARCHIVE, FCVAR_NOTIFY, FCVAR_REPLICATED}, "Whether a traitor can buy PHD Flopper", 0, 1)
 
-CreateConVar("ttt_speedcola_detective", 0, {FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Whether a detective can buy Speed Cola", 0, 1)
+CreateConVar("ttt_speedcola_detective", 0, {FCVAR_ARCHIVE, FCVAR_NOTIFY, FCVAR_REPLICATED}, "Whether a detective can buy Speed Cola", 0, 1)
 
-CreateConVar("ttt_speedcola_traitor", 1, {FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Whether a traitor can buy Speed Cola", 0, 1)
+CreateConVar("ttt_speedcola_traitor", 1, {FCVAR_ARCHIVE, FCVAR_NOTIFY, FCVAR_REPLICATED}, "Whether a traitor can buy Speed Cola", 0, 1)
 
-CreateConVar("ttt_staminup_detective", 1, {FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Whether a detective can buy Staminup", 0, 1)
+CreateConVar("ttt_staminup_detective", 1, {FCVAR_ARCHIVE, FCVAR_NOTIFY, FCVAR_REPLICATED}, "Whether a detective can buy Staminup", 0, 1)
 
-CreateConVar("ttt_staminup_traitor", 0, {FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Whether a traitor can buy Staminup", 0, 1)
+CreateConVar("ttt_staminup_traitor", 0, {FCVAR_ARCHIVE, FCVAR_NOTIFY, FCVAR_REPLICATED}, "Whether a traitor can buy Staminup", 0, 1)
