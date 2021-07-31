@@ -25,7 +25,7 @@ elseif GetConVar("ttt_juggernog_detective"):GetBool() and not GetConVar("ttt_jug
     ITEM.CanBuy = {ROLE_DETECTIVE}
 
 else
-    ITEM.CanBuy = {ROLE_NONE}
+    ITEM.CanBuy = {}
 end
 
 if SERVER then

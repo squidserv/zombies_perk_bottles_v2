@@ -25,7 +25,7 @@ elseif GetConVar("ttt_doubletap_detective"):GetBool() and not GetConVar("ttt_dou
     ITEM.CanBuy = {ROLE_DETECTIVE}
 
 else
-    ITEM.CanBuy = {ROLE_NONE}
+    ITEM.CanBuy = {}
 end
 
 if SERVER then
